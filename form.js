@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const arrOfLinks = [...allLinks];
     
     arrOfLinks.forEach(item => {
-        item.href = "/#form"
+        item.href = "#form"
     })
     
 
