@@ -15,5 +15,12 @@
     <div class="container">
         <h1 class="thank_title">Obrigado pelos dados</h1>
     </div>
+    <script>
+        const link = document.querySelector('a');
+
+        const location = window.location.pathname;
+
+        link.href = `${location}`;
+    </script>
 </body>
 </html>
