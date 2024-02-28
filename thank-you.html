@@ -9,18 +9,18 @@
 <body>
     <div class="header_wrapp">
         <div class="heder_inner">
-            <a href="/" class="back">Voltar</a>
+            <p id="link" class="back">Voltar</p>
         </div>
     </div>
     <div class="container">
         <h1 class="thank_title">Obrigado pelos dados</h1>
     </div>
     <script>
-        const link = document.querySelector('a');
+        const link = document.getElementById('link');
 
-        const location = window.location.pathname;
-
-        link.href = `${location}`;
+        link.addEventListener('click', (e) => {
+            window.history.back();
+        });
     </script>
 </body>
 </html>
